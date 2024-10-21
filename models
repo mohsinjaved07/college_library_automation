@@ -1,0 +1,10 @@
+CREATE TABLE `cla`.`user` ( `registration_no` VARCHAR(45) NOT NULL , `name` VARCHAR(45) NOT NULL , `father_name` VARCHAR(45) NOT NULL , `email` VARCHAR(90) NOT NULL , `password` VARCHAR(45) NOT NULL , `total_fine` VARCHAR(45) NULL , PRIMARY KEY (`registration_no`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `cla`.`book` ( `book_no` VARCHAR(45) NOT NULL , `book_name` VARCHAR(45) NOT NULL , `book_publisher` VARCHAR(45) NOT NULL , `book_author` VARCHAR(45) NOT NULL , `book_edition` VARCHAR(45) NOT NULL , PRIMARY KEY (`book_no`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `cla`.`report` ( `id` INT NOT NULL AUTO_INCREMENT , `book_no` VARCHAR(45) NOT NULL , `registration_no` VARCHAR(45) NOT NULL , `borrowed_date` VARCHAR(45) NOT NULL , `due_date` VARCHAR(45) NOT NULL , `returned_date` VARCHAR(45) NULL , `fine` VARCHAR(45) NULL , PRIMARY KEY (`id`) , FOREIGN KEY (`book_no`) REFERENCES `book`(`book_no`) , FOREIGN KEY (`registration_no`) REFERENCES `user`(`registration_no`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `cla`.`admin` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(45) NOT NULL , `password` VARCHAR(45) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

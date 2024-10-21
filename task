@@ -1,0 +1,57 @@
+Description
+Project Domain / Category
+
+ 
+
+Project Domain / Category
+
+Database Application
+
+ 
+
+Abstract / Introduction
+ 
+
+The library is one of the most important sources of knowledge gathering for students at an educational institute. The basic operations performed in a library are; adding a new member, new books, updating information, searching books, members, and the facility of borrowing and returning books. However, the operations of a library are a very tedious and time-consuming job considering a traditional library system. These operations are performed on daily basis and it consumes a lot of time if you are working with it in registers.
+
+ 
+
+To overcome these issues, we need to introduce the concept of automation of libraries at our educational institutes, the library management system is a windows- based application which was developed to make all the operations fast and easy.
+
+ 
+
+ 
+
+The design of our Institute Library Management system is easy to use for every type of user. Whereas, in our application, there is a facility of report generation which gives detail information about books borrowed by students and faculty and make users possible to get a hard copy of related reports.
+
+ 
+
+Functional Requirements:
+ 
+
+ 
+
+Library Registration
+The administrator can create a new
+New user can login and
+Books
+Admin add, delete or modify the details of the
+Search
+User can search for the required books based on author name, book name
+Borrow books
+A registered user can borrow the book for specific
+Return books
+ 
+
+Book must be returned within the due date; otherwise you must pay fine.
+ 
+
+Report generation
+Depending upon the organizational needs following reports can be generated
+There can be daily reports
+Weekly reports
+Yearly reports
+ 
+
+Tools:
+Python & SQLite is mandatory

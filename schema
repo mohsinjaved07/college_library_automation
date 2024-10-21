@@ -1,0 +1,22 @@
+user:
+- registration_no
+- name
+- father_name
+- email
+- password
+
+Books:
+- book_no
+- book_name
+- book_publisher
+- book_author
+- book_edition
+
+report:
+- report_no
+- book_no
+- registration_no
+- borrowed_date
+- due_date
+- returned_date
+- fine
